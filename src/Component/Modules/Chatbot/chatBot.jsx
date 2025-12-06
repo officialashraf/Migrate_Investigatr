@@ -297,47 +297,61 @@ const ChatBot = () => {
                   <div
                     className={`${styles.messageBox} ${msg.sender === "user" ? styles.userMessage : styles.botMessage}`}
                   >
-                    {(() => {
-                      if (msg.sender === "bot") {
-                        try {
-                          const parsed = JSON.parse(msg.text);
+                   {(() => {
+                      if (msg.sender !== "bot") return msg.text;
 
-                          if (parsed && Array.isArray(parsed.results) && parsed.results.length > 0) {
-                            const columns = Object.keys(parsed.results[0]).map(key => ({
-                              key,
-                              label: key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, " ")
-                            }));
-                            return (
-                              <TableModal
-                                caseTableWrapper
-                                columns={columns}
-                                data={parsed.results}
-                                title="Data Results"
-                                isChatBotView={true}
-                              />
-                            );
-                          }
-
-                          return (
-                            <div style={{
-                              fontSize: "14px",
-                              color: "#999",
-                              padding: "8px 0"
-                            }}>
-                              No relevant data found for your query.
-                            </div>
-                          );
-
-                        } catch (e) {
-                          return msg.text.split('\n').map((line, index) => (
-                            <React.Fragment key={index}>
-                              {line}
-                              {index < msg.text.split('\n').length - 1 && <br />}
-                            </React.Fragment>
-                          ));
-                        }
+                      let parsed = null;
+                      try {
+                        parsed = JSON.parse(msg.text);
+                      } catch (e) {
+                        return msg.text.split("\n").map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            {index < msg.text.split("\n").length - 1 && <br />}
+                          </React.Fragment>
+                        ));
                       }
-                      return msg.text;
+
+                      if (parsed?.results?.length > 0) {
+                        const columns = Object.keys(parsed.results[0]).map((key) => ({
+                          key,
+                          label: key.replace(/_/g, " ").toUpperCase(),
+                        }));
+
+                        const sanitizedData = parsed.results.map((row) => {
+                          const updated = {};
+                          Object.keys(row).forEach((key) => {
+                            const value = row[key];
+                            updated[key] =
+                              typeof value === "object" && value !== null
+                                ? JSON.stringify(value)
+                                : value;
+                          });
+                          return updated;
+                        });
+
+                        return (
+                          <TableModal
+                            caseTableWrapper
+                            columns={columns}
+                            data={sanitizedData}
+                            title="Data Results"
+                            isChatBotView={true}
+                          />
+                        );
+                      }
+
+                      return (
+                        <div
+                          style={{
+                            fontSize: "14px",
+                            color: "#999",
+                            padding: "8px 0",
+                          }}
+                        >
+                          No relevant data found for your query.
+                        </div>
+                      );
                     })()}
                   </div>
                 </div>
