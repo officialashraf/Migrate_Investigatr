@@ -15,7 +15,7 @@ COPY . .
 ENV NODE_OPTIONS="--max_old_space_size=4096"
 
 # Run custom script + vite build
-RUN node generate-build-info.js
+RUN node generate-build-info.jsx
 RUN npm run build
 
 # Step 2: Serve with Nginx
