@@ -1,0 +1,61 @@
+.caseHeader {
+  background-color: #080e17; 
+  /* padding: 10px 20px; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.headerRow {
+  display: flex;
+}
+.backIcon {
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.headerTitle h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px; 
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: white;
+}
+.headerTitle p {
+  margin: 5px 0 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: white;
+}
+.actionIconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.searchHeader{
+      display: flex;
+    padding: 5px;
+}
+.icon {
+  font-size: 40px;
+  color: #1e7df8; 
+  cursor: pointer;
+  transition: border 0.3s ease, color 0.3s ease; 
+  padding: 5px
+}
+
+.activeIcon {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #1e7df8;
+  font-size: 40px;
+}

@@ -1,0 +1,104 @@
+:root {
+  --font-family-main: 'Roboto';
+  --font-size-main: 12px;
+}
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.tableWrapper{
+  scrollbar-color: #1e7df8 #0a192f;
+   scrollbar-width: thin;
+}
+.notfound {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+p,
+label,
+input,
+th,
+td,
+button,
+li, 
+ul,
+div,
+a,
+link,
+span {
+ font-family: var(--font-fontFamily);
+  font-size: var(--font-size-main);
+}
+.App-link {
+  color: #61dafb;
+}
+
+input:-webkit-autofill {
+ background-color: #101D2B  !important;
+  -webkit-text-fill-color: #FFFF !important;
+  box-shadow: 0 0 0 1000px #101D2B inset !important;
+  line-height: normal !important;   
+}
+
+input.MuiInputBase-input:-webkit-autofill,
+input.MuiInputBase-input:-webkit-autofill:focus,
+input.MuiInputBase-input:-webkit-autofill:hover {
+  height: 4px !important;
+  border: none !important;
+  border-radius:'none' !important;
+}
+
+input:disabled {
+  background-color: #ADA8A840;
+  color: #B7B7B7;   
+  cursor: not-allowed;     
+  border: 1px solid #ADA8A8 !important;   
+}
+select:disabled{
+  background-color:  #ADA8A840 !important;
+  color: #B7B7B7 !important;    
+  cursor: not-allowed;     
+  border: 1px solid #ADA8A8 !important;   
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ContainerDashboard {
+  height: 100vh !important;
+  display: grid;
+  flex-direction: column;
+}
+
+

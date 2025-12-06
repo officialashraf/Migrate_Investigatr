@@ -1,0 +1,224 @@
+import "../Case/tableGlobal.css";
+import AddUser from "./addUser";
+import EditUser from "./editUser";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Cookies from "js-cookie";
+import { toast } from "react-toastify";
+import UserDetails from "./userDetails";
+import Loader from "../Layout/loader";
+import ResetPassword from "./resetPassword";
+import TableModal from "../../Common/Table/table";
+import AppButton from "../../Common/Buttton/button";
+import { useTranslation } from "react-i18next";
+
+const UserManagement = () => {
+  const [data, setData] = useState([]);
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
+  const [showEditForm, setShowEditForm] = useState(false);
+  const [showResetForm, setShowResetForm] = useState(false);
+  const [selectedUser, setSelectedUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
+
+  const togglePopup = () => setShowAddForm(!showAddForm);
+
+  const toggleDetails = (item) => {
+    setSelectedUser(item.id);
+    setShowDetail((prev) => !prev);
+  };
+
+  const toggleEditForm = (item) => {
+    setSelectedUser(item);
+    setShowEditForm((prev) => !prev);
+  };
+
+  const toggleResetForm = (item) => {
+    setSelectedUser(item);
+    setShowResetForm((prev) => !prev);
+  };
+
+  const fetchUsers = async () => {
+    try {
+      setLoading(true);
+      const token = Cookies.get("accessToken");
+      const response = await axios.get(
+        `${window.runtimeConfig.VITE_APP_API_USER_MAN}/api/user-man/v1/user`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setData(response.data.data);
+    } catch (error) {
+      if (error.response?.data?.detail) {
+        toast.error(error.response.data.detail);
+      } else {
+        console.error("An error occurred:", error.message);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchUsers();
+    const handleDatabaseUpdated = () => {
+      fetchUsers();
+    };
+    window.addEventListener("databaseUpdated", handleDatabaseUpdated);
+    return () => {
+      window.removeEventListener("databaseUpdated", handleDatabaseUpdated);
+    };
+  }, []);
+
+  const confirmDelete = (id, name) => {
+    toast(
+      (toastInstance) => (
+        <div>
+          <p>{t("user.confirm_delete", { name })}</p>
+          <button
+            className="custom-confirm-button"
+            onClick={() => {
+              deleteUser(id, name);
+              toast.dismiss(toastInstance.id);
+            }}
+          >
+            Yes
+          </button>
+          <button
+            className="custom-confirm-button"
+            onClick={() => toast.dismiss(toastInstance.id)}
+          >
+            No
+          </button>
+        </div>
+      ),
+      {
+        autoClose: false,
+        closeOnClick: false,
+        draggable: false,
+      }
+    );
+  };
+
+  const deleteUser = async (id, name) => {
+    const token = Cookies.get("accessToken");
+    if (!token) {
+      console.error("No token found in cookies.");
+      return;
+    }
+    try {
+      await axios.delete(
+        `${window.runtimeConfig.VITE_APP_API_USER_MAN}/api/user-man/v1/user/${id}`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      window.dispatchEvent(new Event("databaseUpdated"));
+      toast.success(t("user.deleted_success", { name }));
+    } catch (err) {
+      if (err.response) {
+        toast.error(err.response?.data?.detail || t("user.error_generic"));
+      } else if (err.request) {
+        toast.error(t("user.no_response"));
+      } else {
+        toast.error(t("user.unknown_error"));
+      }
+    }
+  };
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  const userColumns = [
+    { key: "id", label: t("user.columns.id") },
+    { key: "username", label: t("user.columns.username") },
+    { key: "first_name", label: t("user.columns.first_name") },
+    { key: "last_name", label: t("user.columns.last_name") },
+    { key: "role", label: t("user.columns.role") },
+    { key: "email", label: t("user.columns.email") },
+    { key: "last_logout", label: t("user.columns.last_active") },
+    { key: "createdOn", label: t("user.columns.created_on") },
+    { key: "createdBy", label: t("user.columns.created_by") },
+    { key: "updatedOn", label: t("user.columns.edited_on") },
+    { key: "updatedBy", label: t("user.columns.edited_by") },
+    {
+      key: "status",
+      label: t("user.columns.status"),
+      render: (val) => <span className="badge bg-dark">{val}</span>,
+    },
+  ];
+
+  return (
+    <div className="user-management-container">
+      {/* --- Controls / Empty state --- */}
+      {data && data.length > 0 ? (
+        <div className="tableWrapper">
+          <TableModal
+            title={t("user.dashboard_title")}
+            searchPlaceholder="Search user"
+            data={data}
+            columns={userColumns}
+            onRowAction={{
+              edit: (row) => toggleEditForm(row),
+              delete: (row) => confirmDelete(row.id, row.username),
+              details: (row) => toggleDetails(row),
+              reset: (row) => toggleResetForm(row),
+            }}
+            onAddClick={() => togglePopup()}
+            idPrefix="User"
+            btnTitle={t("user.add_button")}
+          />
+        </div>
+      ) : (
+        <div className="resourcesContainer" style={{ border: "none" }}>
+          <h3 className="title">{t("user.get_started_title")}</h3>
+          <p className="content">{t("user.get_started_text")}</p>
+          <AppButton onClick={togglePopup}>{t("user.add_button")}</AppButton>
+        </div>
+      )}
+
+      {/* --- Popups --- */}
+      {showResetForm && <ResetPassword onClose={toggleResetForm} item={selectedUser} />}
+      {showAddForm && <AddUser onClose={togglePopup} />}
+      {showDetail && <UserDetails userId={selectedUser} toggleDetails={toggleDetails} />}
+      {showEditForm && <EditUser togglePopup={toggleEditForm} item={selectedUser} />}
+    </div>
+  );
+};
+
+export default UserManagement;
+
+
+
+
+
+
+/* Container takes full height and prevents scrollbars */
+.user-management-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: var(--color-colors-blackShade);
+}
+
+/* Table docked at bottom */
+.tableWrapper {
+  margin-top: auto;     /* push table to bottom */
+  height: 40vh;         /* table takes bottom 40% of screen */
+  overflow: hidden;     /* hide scrollbars */
+  border-radius: var(--shape-borderRadius);
+  background-color: var(--color-colors-secondary);
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,42 @@
+.pt-4 {
+  padding-top: 0rem !important;
+}
+
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  color: white;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #080e17;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.loginForm {
+  background-color: #101d2b;
+  padding: 40px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.resetLink {
+  color: #ccc;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.resetLink a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+.logoCenter {
+  width: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto; 
+}

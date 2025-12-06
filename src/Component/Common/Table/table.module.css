@@ -1,0 +1,303 @@
+.css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input {
+ padding: 0px !important;
+}
+
+.tableContainer {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--color-colors-secondary);
+}
+
+.container {
+  padding: 1rem;
+  background-color: var(--color-colors-blackShade);
+  border-radius: var(--shape-borderRadius);
+  color: var(--color-colors-neutralText);
+  overflow-x: auto;
+  font-family: var(--font-fontFamily);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  border: 1px solid var(--color-colors-secondary)  !important;
+  background-color: var(--color-colors-secondary) !important;
+  border-radius: var(--shape-borderRadius);
+  height: 36px !important;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-colors-neutralText);
+}
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-colors-secondary);
+  border: 1px solid var(--color-colors-secondary);
+  border-radius: var(--shape-borderRadius);
+  height: 36px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: var(--color-colors-primaryAccent) !important;
+}
+
+.searchBar::placeholder {
+  color: var(--color-colors-neutralText);
+  margin-left: 10px !important;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--color-colors-neutralText);
+  font-size: var(--font-body2-fontSize);
+  margin-bottom: 0px !important;
+}
+
+.dropdown-menu {
+  z-index: 1000; 
+  position: absolute;
+}
+
+.table thead{
+   background-color: var(--color-colors-primaryAccent) !important;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  height: 42px;
+  transform: none; /* Not needed */
+  transition: none !important; 
+}
+
+.table thead th {
+  background-color: var(--color-colors-primaryAccent) !important;
+  color: var(--color-colors-neutralText);
+  text-align: left;
+  padding: 12px 8px;
+  font-weight: var(--font-h6-fontWeight);
+  white-space: nowrap;
+  border-style: none !important;
+  min-width: 40px;
+  max-width: 200px;
+}
+/* .onlyBorder{
+  border-radius: 0px !important;
+} */
+
+.noPadding{
+  padding: 0px !important;
+}
+
+.noPaddingInput{
+  padding: 0px 5px !important;
+  margin-bottom: 0px !important;
+}
+
+ .noPaddingcase{
+  padding: 0.5rem 0.75rem 0.75rem 0.75rem !important;
+margin-bottom: 0px !important;
+ }
+
+.table thead th:first-child {
+  border-top-left-radius: var(--shape-borderRadius);
+  border-bottom-left-radius: var(--shape-borderRadius);
+}
+/* .tableSharp {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+} */
+.table thead th:last-child {
+  border-top-right-radius: var(--shape-borderRadius);
+  border-bottom-right-radius: var(--shape-borderRadius);
+}
+
+.table tbody td {
+  padding: 12px 8px;
+  white-space: nowrap;
+  background-color: var(--color-colors-secondary) !important;
+  border-bottom: 0.3px solid var(--color-colors-gray20);
+  color: var(--color-colors-neutralText) !important;
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-colors-primary);
+}
+
+.th {
+  cursor: pointer;
+}
+
+.thContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.moreIcon {
+  cursor: pointer;
+  color: var(--color-colors-neutralText);
+}
+
+.iconEdit {
+  cursor: pointer;
+  font-size: 18px !important;
+  background-color: #4b451a;
+  color: var(--color-colors-warning);
+  transition: transform 0.2s ease;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+.iconDelete {
+  cursor: pointer;
+  font-size: 18px !important;
+  background-color: #4d1f27;
+  color: var(--color-colors-danger);
+  transition: transform 0.2s ease;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+.customnWrapper{
+margin-bottom: 0px !important;
+}
+
+.iconEdit:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.iconDelete:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .searchBar {
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    font-size: var(--font-caption-fontSize);
+    padding: 0.5rem;
+  }
+}
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--color-colors-secondary) !important; 
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 45vh; 
+  border-radius: var(--shape-borderRadius);
+  scrollbar-color: #1e7df8 var(--color-colors-secondary) ;
+  scrollbar-width: thin;
+}
+
+.tableWrapperDynamic {
+  overflow-x: auto;
+  overflow-y: auto;
+  border-radius: var(--shape-borderRadius);
+  scrollbar-color: #1e7df8 var(--color-colors-secondary);
+  scrollbar-width: thin;
+  transition: max-height 0.3s ease;
+  height:'70vh'
+}
+
+.casetableWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 61vh; 
+  border-radius: var(--shape-borderRadius);
+  scrollbar-color: #1e7df8 var(--color-colors-secondary) ;
+  scrollbar-width: thin;
+}
+.btntableWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 54vh; 
+  border-radius: var(--shape-borderRadius);
+  scrollbar-color: #1e7df8 var(--color-colors-secondary) ;
+  scrollbar-width: thin;
+}
+@media screen and (max-height: 940px) {
+  .tableWrapper {
+    max-height: 54vh;
+    margin-top: 5px;
+  }
+   .casetableWrapper {
+    max-height: 70vh;
+  }
+  .btntableWrapper {
+    max-height: 62vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tableWrapper {
+    max-height: 50vh;
+  }
+  .casetableWrapper {
+    max-height: 66vh;
+  }
+  .btntableWrapper {
+    max-height: 58vh;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  .tableWrapper {
+    max-height: 45vh;
+    margin-top: 5px;
+  }
+   .casetableWrapper {
+    max-height: 61vh;
+  }
+  .btntableWrapper {
+    max-height: 53vh;
+  }
+}
+@media (max-width: 800px) {
+  .reactSelectContainer {
+    width: 200px;
+  }
+}
+
+:global(.MuiCheckbox-root.Mui-disabled) {
+  color: white !important;
+}
+
+.caseForm {
+  max-height: 310px; 
+  overflow-y: auto; 
+  padding-top: 10px;
+  scrollbar-width: thin;
+}
+
+.filterForm {
+  max-height: 310px; 
+  overflow-y: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: #1e7df8 #0a192f;
+  scrollbar-width: thin;
+}

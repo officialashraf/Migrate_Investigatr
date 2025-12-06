@@ -1,0 +1,201 @@
+:global(.MuiBox-root.css-0){
+  background-color: var(--color-colors-secondary) !important;
+  border-radius:25px;
+  max-width: 1150px;
+}
+
+.css-3ssuu9-MuiTableCell-root {
+  padding: 0px 5px;
+  font-size: 12px;
+  height: 10px !important;
+  background-color: lightgrey;
+}
+
+.css-1orzuox-MuiTableCell-root {
+  padding: 0px 5px;
+  background-color: lightgrey !important;
+}
+
+.css-to33az-MuiTableCell-root {
+  padding: 0px 5px;
+  background-color: lightgrey !important;
+}
+
+.css-1dc80h3-MuiTableCell-root {
+  padding: 0px 5px;
+  font-size: 12px;
+  height: 10px !important;
+  background-color: lightgrey;
+}
+
+.css-1xwxv7r-MuiTable-root {
+  background-color: lightgray !important;
+}
+
+g.recharts-layer .recharts-bar:hover {
+  fill: red;
+  background-color: white;
+}
+
+.graphchats {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color:var(--color-colors-primaryAccent) var(--color-colors-secondary);
+}
+
+.graphchats::-webkit-scrollbar {
+  height: 8px;
+}
+
+.graphchats::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.graphchats::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.graphchats::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.boxes {
+  flex: 0 0 370px;
+  min-width: 370px;
+  max-width: 370px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.resourceBoxes {
+  /* flex: 0 0 350px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  margin-top:10px
+}
+.filterCount {
+  text-align: center;
+  margin: 10px 0;
+}
+
+:global(.input:-webkit-autofill) {
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media screen and (min-width: 1920px) {
+  /* .graphchats {
+    justify-content: center;
+  } */
+
+  .boxes {
+    flex: 0 0 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+.graphchats {
+    /* justify-content: center; */
+  }
+
+  .boxes {
+    flex: 0 0 370px;
+    min-width: 370px;
+    max-width: 370px;
+    height: 320px;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .boxes {
+    height: 300px;
+  }
+}
+
+/* Tablet Portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .boxes {
+    height: 300px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 520px) and (max-width: 767px) {
+ .graphchats {
+    gap: 15px;
+  }
+
+ .boxes {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 519px) {
+  .graphchats {
+    gap: 10px;
+    padding: 5px;
+  }
+
+ .boxes {
+    flex: 0 0 260px;
+    min-width: 260px;
+    max-width: 260px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+ .graphchats {
+    gap: 10px;
+    padding: 5px;
+  }
+
+ .boxes {
+    flex: 0 0 250px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 220px;
+  }
+h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .containerFluid {
+    padding: 0 10px;
+  }
+
+.MuiBox-root {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px;
+  }
+}

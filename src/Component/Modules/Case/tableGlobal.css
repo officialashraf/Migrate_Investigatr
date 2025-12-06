@@ -1,0 +1,251 @@
+.data-table-container {
+  padding-top: 0px;
+  margin: 0px 5px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+th {
+  background-color: gray !important;
+}
+
+td {
+  background-color: lightgray !important;
+  height: 20px;
+}
+
+.search-bar1 {
+  width: 20%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.form-control {
+  padding: 0 0 0 15px !important;
+  font-size: 12px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.icon:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.header-icon {
+  display: flex;
+}
+
+.btn {
+  padding: none !important;
+}
+
+.data-table {
+  background-color: #e9e9e9;
+  color: #000;
+  table-layout: fixed;
+  border-collapse: collapse;
+  max-height: 80vh; /* Use viewport height to limit height dynamically */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .data-table {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}
+
+.data-table th {
+  vertical-align: middle;
+  padding: 0px 2px 0px 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #fff;
+}
+
+.data-table td {
+  vertical-align: middle;
+  padding: 0px 2px 0px 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.th-roles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-table thead {
+  background-color: #d3d3d3;
+  font-weight: none !important;
+  position: sticky;
+  top: -2px;
+  z-index: 2;
+  height: 21px;
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 0rem !important;
+  --bs-dropdown-link-active-bg: #101D2B;
+  padding: 0px;
+}
+.dropdown-item{
+  background-color: #101D2B;
+  color: #d2d2d2;
+  
+}
+
+.dropdown-item:hover {
+  background-color: #101D2B;
+  border-color: white;
+  color: white;
+}
+.custom-dropdown1 .dropdown-toggle::after {
+  display: none;
+}
+.custom-dropdown-toggle {
+  background: #101D2B;
+  border: none;
+  color: #d2d2d2;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  justify-content: flex-end;
+}
+
+.custom-dropdown-toggle::after {
+  display: none;
+  
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus,
+.custom-dropdown-toggle:active {
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  color: white;
+}
+
+.custom-btn,
+.dropdown-toggle {
+  --bs-btn-border-color: none !important;
+  --bs-btn-hover-color: none !important;
+  --bs-btn-hover-bg: none !important;
+  --bs-btn-hover-border-color: none !important;
+  --bs-btn-focus-shadow-rgb: none !important;
+  --bs-btn-active-color: none !important;
+  --bs-btn-active-bg: none !important;
+  --bs-btn-active-border-color: none !important;
+  --bs-btn-active-shadow: none !important;
+  --bs-btn-disabled-color: none !important;
+  --bs-btn-disabled-bg: none !important;
+  --bs-btn-disabled-border-color: none !important;
+  --bs-btn-bg: white;
+  --bs-btn-color: black;
+  --bs-btn-padding-x: 0rem !important;
+}
+
+
+
+
+.search-bar1 .form-control:focus {
+  border-color: transparent; /* Focus border color ko remove karne ke liye */
+  box-shadow: none; /* Focus box-shadow ko remove karne ke liye */
+  outline: none; /* Focus outline ko remove karne ke liye */
+}
+
+.rounded-pill {
+  border-radius: 5px !important;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.add-btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 0px;
+  background-color: #2196F3;
+  color: #000;
+  height: "22px";
+}
+
+.add-btn:hover {
+  background-color: #2196F3;
+  color: white;
+}
+.custom-confirm-button:hover {
+  background-color: #2196F3;
+  color: white;
+}
+.custom-confirm-button {
+    background-color: #0073cf;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 10%;
+    margin-left: 5px;
+    padding: 10px 15px;
+    width: 30%;
+}
+
+.badge-custom {
+  --bs-badge-font-weight: 0 !important;
+  font-family: sans-serif !important;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #000;
+    border-radius: 5px !important; /* Border radius ko 5px set karne ke liye */
+  width: 80%; /* Badge ki width ko container ke width ke barabar set karne ke liye */
+  display: flex; /* Badge ko flex container banane ke liye */
+  justify-content: center; /* Badge text ko center align karne ke liye */
+}
+
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  font-weight: 500;
+  justify-content: center;
+  display: inline-block;
+  white-space: nowrap;
+  align-items: center;
+}

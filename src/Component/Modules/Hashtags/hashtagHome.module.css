@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.SearchBarContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+/* Top Search Bar */
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 0;
+}
+
+/* Middle Section */
+.middle {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Left User Profile */
+.left {
+  width: 30%;
+  /* background: #f8f9fa; */
+  border-radius: 8px;
+  /* padding: 12px; */
+  overflow-y: auto;
+  min-height: 500px;
+}
+
+/* Right Resource */
+.right {
+  width: 70%;
+  
+  /* background: #ffffff; */
+  border-radius: 8px;
+  /* padding: 12px; */
+  overflow-y: auto;
+}
+
+/* Bottom Summary */
+.summary {
+  margin-top: 10px;
+  /* background: #f1f3f5; */
+  border-radius: 8px;
+  /* padding: 12px; */
+}
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 80%;
+}
+
+/* Input */
+.searchInput {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 20px;
+  background-color: #080E17;
+  border: 1px solid #0073CF;
+  color: white;
+  width: 230px;
+}
+
+/* Dropdown */
+.searchDropdown {
+  width: 140px;
+}
+
+/* Date input ko line me lane ke liye */
+.searchRow > div {
+  margin-top: 0 !important;
+}
+
+/* Search icon */
+.searchIcon {
+  color: #0073CF;
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+}
+

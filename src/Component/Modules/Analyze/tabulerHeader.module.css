@@ -1,0 +1,42 @@
+.col1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px; 
+}
+
+.icon-styles {
+  color: gray;
+  font-size: large;
+}
+
+.icon-style {
+  color: gray;
+  size: 25px;
+}
+
+.icon-style:hover {
+  color: lightgrey;
+  background-color: black;
+}
+.icon-styles:hover {
+  color: lightgrey;
+  background-color: black;
+}
+.icon-style {
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  padding: 2px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.icon-style:hover {
+  background-color: #ddd;
+}
+
+.active-icon {
+  background-color: #555;
+  color: white;
+}

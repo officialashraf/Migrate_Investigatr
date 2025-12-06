@@ -1,0 +1,149 @@
+
+.sideB {
+  background-color: var(--color-colors-secondary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding-bottom: 70px; */
+}
+
+.sideTop {
+  /* padding-top: 70px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoIcon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 45px;
+  width: 45px;
+  border: 3px solid #3498db;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;         /* normal column flow */
+  justify-content: center;        /* vertical centering */
+  align-items: center;            /* horizontal centering */
+  text-align: center;             /* center text inside each line */
+  padding: 2px;                   /* optional spacing */
+  line-height: 1.2;               /* tighter line spacing */
+  overflow: hidden;               /* prevent overflow */
+}
+
+
+.sideBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.sideBottomNavLink {
+  /* background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #3498db; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2px;
+}
+
+/* .sideBottomNavLink svg {
+  color: #3498db;
+} */
+
+.sideBottomNavLinkActive {
+  background-color: #3498db;
+  padding: 2px 0px;
+}
+.sideBottomNavLinkActive svg {
+ color: var(--color-colors-backgroundColor);
+}
+.sideBottomNavLink:hover {
+  /* opacity: 4%; */
+  color: #3498db;
+}
+
+.navSideLink {
+  color: #D6D6D6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navSideLink svg {
+  height: 20px;
+  width: 30px;
+  background-color: transparent;
+  padding: 2px;
+  border-radius: 15px;
+  color: #D6D6D6;
+  transition: all 0.3s ease;
+}
+
+.navSideLink:hover svg {
+  background-color: #101D2B;
+  color: #3498db;
+}
+
+.navSideLinkActive svg {
+  background-color: #3498db;
+  color: #0A1623;
+}
+
+.navSideLink span {
+  margin-top: 2px;
+}
+
+@media (max-width: 767px) {
+  .sideB {
+    padding: 15px 0;
+    justify-content: space-between;
+  }
+
+  .navSideLink {
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+
+  .navSideLink svg {
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideB {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .navSideLink {
+    font-size: 9px;
+    margin: 8px;
+  }
+
+  .navSideLink svg {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+  }
+}

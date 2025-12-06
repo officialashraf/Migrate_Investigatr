@@ -1,0 +1,49 @@
+.customContainerH {
+  padding: 0;
+}
+
+.caseIcon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.caseInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0px 10px;
+}
+
+.caseId {
+  font-size: 20px;
+  color: var(--color-colors-neutralText);
+}
+
+.caseTitleStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caseTitle {
+  color: var(--color-colors-neutralText);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.badgeWarning {
+  background-color: var(--color-colors-copper) !important;
+  color: var(--color-colors-neutralText);
+}
+
+.ml2 {
+  margin-left: 0.5rem;
+}
+
+.dFlexGap2 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+}

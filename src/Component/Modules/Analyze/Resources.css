@@ -1,0 +1,725 @@
+.container-r {
+  width: 100%;
+  height: auto;
+  background-color: #080e17;
+}
+
+.top-header {
+  display: flex;
+  padding: 2px;
+  background-color: #080e17 !important;
+  border-radius: 5px;
+font: 600 18px Poppins, sans-serif;
+}
+
+.title h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.jobs {
+  display: flex;
+  align-items: center;
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.job-content h6 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 10px;
+}
+
+.icons svg {
+  font-size: 12px;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Content Section */
+.contents {
+  display: flex;
+  height: 77.5vh;
+  background-color: #080e17;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  border-radius: 18px; 
+  overflow-x: auto;
+  scrollbar-color: #1e7df8 #0a192f;
+  scrollbar-width: thin;
+  height: 100%;
+  width: 100%;
+}
+.overflow-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  padding: 10px; 
+}
+.left-content {
+  width: 300px;
+  background-color: #101d2b;
+  color: white;  
+  margin-bottom: 45px;
+  border-radius: 18px;
+  scrollbar-color: #1e7df8 #0a192f;
+  scrollbar-width: thin;
+}
+.leftSearchContent {
+  width: 250px;
+  background-color: #101d2b;
+  color: white;  
+  margin-bottom: 45px;
+  height: 65vh;
+  border-radius: 18px;
+  scrollbar-color: #1e7df8 #0a192f;
+  scrollbar-width: thin;
+}
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .left-sidebar {
+    max-height: 78vh;
+    overflow-y: auto; 
+  }
+}
+#scrollableDiv {
+  border: 2px solid red;
+}
+.inner-content {
+  padding-bottom: 60px; 
+  height: 100px;
+  padding-top: 25px;
+}
+
+
+.sidebar-header h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+.sidebar-header .search-icon {
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 10px; 
+}
+
+.resourceItem {
+  display: flex;
+  align-items: center;
+  background-color: #101d2b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.resourceItem:hover {
+  background-color: #0073cf;
+  color: white;
+}
+
+.icon {
+  color: #0073cf; /* initial icon color */
+  transition: color 0.3s ease;
+  font-size: 30px  !important;
+  font: 60px  !important;
+}
+.icons {
+  color: #0073cf; /* initial icon color */
+  transition: color 0.3s ease;
+  font-size: 60px  !important;
+  font: 60px  !important;
+}
+.resourceItem:hover .icons,
+.resourceItem.active .icons {
+  color: white; /* hover pe icon white ho jayega */
+}
+
+.resourceItem.active {
+  background-color: #0073cf;
+  color: white;
+}
+
+.resourceImage {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.resourceDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.resourceType {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.resourceContent {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin: 0;
+}
+.commentBar {
+  background-color: black;
+  color: white;
+  height: 25px;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  padding: 10px;
+  margin-top: 50%;
+}
+
+@media (max-width: 1367px) and (min-width: 769px) {
+  .left-sidebar {
+    padding: 8px;
+  }
+  /* .left-content{
+    width: 30%;
+  } */
+
+  .right-content {
+    width: 70%;
+  }
+  .h4 {
+    font-size: 12px;
+  }
+
+  .top-header {
+    align-items: flex-start;
+  }
+  .title h5 {
+    font-size: 15px; 
+  }
+
+  .subscribeButton {
+    font-size: 12px; 
+  }
+}
+@media (max-width: 480px) {
+  .container-r {
+    padding: 8px; 
+  }
+
+  .channel-action {
+    gap: 8px; 
+  }
+
+
+  .actions {
+    justify-content: space-between;
+  }
+
+
+  .like,
+  .comment {
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .actionButton span + span {
+    display: none; 
+  }
+}
+
+@media (max-width: 888px) {
+  .right-content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+    padding: 8px;
+    height: 100%; 
+  }
+}
+
+
+.resourceDetailsContainer {
+  display: flex;
+   justify-content: space-between;
+   gap: 15px;  
+}
+.right-content {  
+  /* flex: 1; */
+  padding-left: 10px;
+  /* padding-bottom: 50px; */
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #080e17;
+  align-items: center;
+  justify-content: center;
+  /* height: 60vh; */
+  /* -ms-overflow-style: none;     
+  scrollbar-width: none;  */
+  scrollbar-width: thin;  
+}
+.rightSearchContent {  
+  /* flex: 1; */
+  padding-left: 10px;
+  /* padding-bottom: 50px; */
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #080e17;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  /* -ms-overflow-style: none;     
+  scrollbar-width: none;  */
+  scrollbar-width: thin;  
+}
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .right-content {
+    max-height: 80vh;
+    /* overflow-y: auto;  */
+  }
+}
+.resourceDetailsView {
+  padding: 10px;
+  background-color: #101D2B;
+  width: 100%;
+  max-width: px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0px 20px;
+  /* flex: 2;   */
+   margin: 0 10px;         /* small spacing between panels */
+  /* min-width: 0;  */
+  overflow: hidden;
+  flex-shrink: 1;
+  min-width: 600px;
+  position: relative;
+}
+@media screen and (max-width: 1367px) {
+  .resourceDetailsView {
+    min-width: 550px; 
+    /* max-width: 550px; */
+  }
+  
+}
+.sentimentSection {
+  flex: 1;
+  background-color: #101D2B;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 60vh;
+  overflow: auto;
+  width: auto;
+  -ms-overflow-style: none;      
+  scrollbar-width: none;   
+}
+@media screen and (max-width: 1367px) {
+  .sentimentSection {
+    width: auto; 
+    overflow: auto;
+  }
+  
+}
+.search-chips {
+  background: #0073cf;
+  padding: 2px 4px 2px 4px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  border: 1px solid #0073cf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.commentButton {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: #0073CF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.resourceDetailsMain{
+   position: relative;
+   display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+@media screen and (max-width: 980px) {
+  .resourceDetailsView {
+    min-width: 300px; 
+  }
+  
+}
+.vkIframe {
+  width: 100%;
+  height: auto;
+  max-width: 800px; 
+  display: block;
+  object-fit: contain; 
+  border-radius: 10px;
+}
+.marginSides20 {
+  /* margin-left: 5%; */
+  /* margin-right: 20%; */
+}
+
+.sentiment {
+      font-size: 16px;
+    font-weight: 500;
+    justify-content: flex-start;
+    background-color: #0073CF;
+    border-radius: 15px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    width: 170.49px;
+}
+
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.displayName {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0px;
+    align-items: center;
+    font-weight: 500;
+}
+.name-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postDate {
+     font-size: 12px;
+    color: #D9D9D9;
+    margin: 2px 0 0 0;
+    font-weight: 200;
+}
+.postImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+@media  (max-width: 1920px) {
+  .postImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+  
+}
+.noDataWrapper {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #D9D9D9;
+  background-color: #101D2B;
+  border-radius: 15px;
+}
+.imageFlexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; 
+  margin-top: 10px;
+  justify-content: center;
+}
+.imageGridWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.postMedia {
+  object-fit: cover;
+  border-radius: 0px; 
+  display: block; 
+}
+
+.imageGridWrapper .postMedia:only-child {
+  height: auto;
+  object-fit: contain;
+  width: 100%; 
+}
+
+.imageGridWrapper .postMedia {
+  width: calc(50% - 4px);
+}
+
+.mediaPost {
+  object-fit: cover;
+  border-radius: 0px; 
+  display: block; 
+}
+
+.imageGridWrapper .mediaPost:only-child {
+  height: 500px;
+  object-fit: contain;
+  width: 100%; 
+}
+
+.imageGridWrapper .mediaPost {
+  width: calc(50% - 4px);
+}
+body {
+  overflow-x: hidden;
+}
+
+.activityContent {
+  font-size: 11px;
+  color: #D9D9D9;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.like-commment-share {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  font-size: 20px; 
+  color: #FFFFFF; 
+  align-items: center;
+  font-weight: 400;
+}
+.like {
+  font-size: 20px; 
+  color: #FFFFFF;
+  gap: 1px;
+}
+.comment {
+  font-size: 20px;
+  color: #FFFFFF;
+  gap: 1px;
+}
+.repost {
+  font-size: 20px; 
+  color: #FFFFFF;
+  gap: 1px;
+}
+.vk {
+  justify-content: flex-start;
+}
+.unified-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tiktok-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: black;
+  margin: 0px 20px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-panel {
+  position: absolute;
+  right: 10px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 15px;
+}
+
+.icon {
+  text-align: center;
+  font-size: 18px;
+}
+
+.icon span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.bottom-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 60px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.channel-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px; 
+  padding: 10px;
+  border-bottom: 1px solid #646464;
+  flex-wrap: wrap; 
+}
+.channelInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.channelLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channelName {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.subscribers {
+  font-size: 0.875rem;
+  color: #080E17;
+}
+
+.subscribeButton {
+  margin-left: auto;
+  background-color: #080E17;
+  color: rgb(255, 255, 255);
+  padding: 2px 8px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.subscribeButton:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  gap: 12px;
+  flex-wrap: wrap; 
+
+  max-width: 800px;
+}
+
+.actionButton {
+  display: flex; 
+  background-color: #080E17;
+  color: white;
+  border: none;
+  align-items: center;
+  border-radius: 12px;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  gap: 4px;
+  white-space: nowrap; 
+  /* font-size: 0.75rem; */
+  padding: 4px 6px;
+  flex: 1 1 45%; 
+  font-size: 12px;
+}
+
+.actionButton:hover {
+  background-color: #e0e0e0;
+}
+
+.resourceItem:hover .linkedin-hover,
+.resourceItem.active .linkedin-hover {
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 600px) {
+  .channel-action {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .channelLogo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .channelName {
+    font-size: 0.9rem;
+  }
+
+  .subscribeButton {
+    font-size: 0.85rem;
+    padding: 2px 6px;
+  }
+}

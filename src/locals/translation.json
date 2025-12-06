@@ -1,0 +1,251 @@
+{
+  "welcome": "A Secure and Unified OSINT Platform for Africa",
+  "login": {
+    "title": "Login",
+    "username": "Username *",
+    "usernamePlaceholder": "Enter your username",
+    "password": "Password *",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Login to Begin Your Investigation",
+    "LicensePlaceholder": "Paste your license key here",
+    "apply": "Apply",
+    "LicenseValidation": "Please enter the license key before proceeding",
+    "LicenseError": "License registered but verification failed. Try again.",
+    "LicenseSuccess": "License registered successfully",
+    "LicenseError1": "License registration failed",
+    "LoginError": "An unexpected error has occurred. Please try again",
+    "LoginError1": "Something went wrong. Please try again"
+  },
+  "footer": "Proudly developed by Proforce",
+  "loginErrors": {
+    "usernameRequired": "Username is required",
+    "passwordRequired": "Password is required"
+  },
+
+  "cases": {
+    "case_count": "All Cases",
+    "New": "New Cases",
+    "In Progress": "In Progress",
+    "Closed": "Closed",
+    "On Hold": "On Hold",
+    "Archived": "Archived",
+    "Deleted": "Deleted"
+  },
+  "case_id": "Case ID",
+  "title": "Title",
+  "description": "Description",
+  "created_on": "Created On",
+  "created_by": "Created By",
+  "assignee": "Assignee",
+  "watchers": "Watchers",
+  "edited_on": "Edited On",
+  "edited_by": "Edited By",
+  "status": "Status",
+  "case_details": "Case Details",
+  "add_new_case": "Add New Case",
+  "lets_get_started": "Let's Get Started!",
+  "add_cases_to_get_started": "Add cases to get started",
+  "confirm_delete_case": "Are you sure you want to delete {{title}} case?",
+  "yes": "Yes",
+  "no": "No",
+  "case_deleted_success": "Case {{title}} deleted successfully",
+  "error": {
+    "fetching_data": "Error fetching data",
+    "deleting_case": "Error deleting case"
+  },
+  "case_form": {
+    "create_case": "Create Case",
+    "title": "Title *",
+    "description": "Description",
+    "title_placeholder": "Enter title",
+    "description_placeholder": "Enter description",
+    "assignee": "Assignee",
+    "watchers": "Watchers",
+    "select_assignee": "Select assignee",
+    "select_watchers": "Select watchers",
+    "create": "Create",
+    "creating": "Creating...",
+    "cancel": "Cancel",
+    "title_required": "Title is required",
+    "description_required": "Description is required",
+    "success": "Case created successfully",
+    "auth_error": "Authentication error: No token found",
+    "unexpected_response": "Unexpected response from server",
+    "creation_error": "Error encountered during case creation."
+  },
+  "edit_user": {
+    "heading": "Edit User",
+    "username": "Username *",
+    "first_name": "First Name *",
+    "last_name": "Last Name",
+    "role": "Role *",
+    "role_placeholder": "Select a role",
+    "email": "Email ID *",
+    "contact_number": "Contact Number",
+    "username_required": "Username is required",
+    "email_required": "Email is required",
+    "invalid_email": "Invalid email format",
+    "token_missing": "Token not found. Please log in again",
+    "user_fetch_error": "Failed to fetch user data. Please try again later",
+    "no_changes": "No changes detected.",
+    "success": "User updated successfully.",
+    "update_error": "Something went wrong while updating. Please try again",
+    "edit": "Edit",
+    "editing": "Editing...",
+    "cancel": "Cancel"
+  },
+  "edit_case": {
+    "heading": "Edit Case",
+    "title": "Title *",
+    "description": "Description",
+    "assignee": "Assignee",
+    "assignee_placeholder": "Select Assignee",
+    "watchers": "Watchers",
+    "watchers_placeholder": "Select Watchers",
+    "status": "Status",
+    "status_placeholder": "Select Status",
+    "comment": "Comment",
+    "title_required": "Title is required",
+    "description_required": "Description is required",
+    "token_missing": "Authentication error: No token found",
+    "user_fetch_error": "Failed to fetch users",
+    "success": "Case updated successfully",
+    "update_error": "Failed to update case",
+    "edit": "Edit",
+    "editing": "Editing...",
+    "cancel": "Cancel",
+    "loading": "Loading case details...",
+    "status_on_hold": "On Hold",
+    "status_closed": "Closed"
+  },
+  "caseDetails": {
+    "title": "Case Details",
+    "caseId": "Case ID",
+    "status": "Status",
+    "description": "Description",
+    "createdOn": "Created On",
+    "createdBy": "Created By",
+    "editedOn": "Edited On",
+    "editedBy": "Edited By",
+    "assignee": "Assignee",
+    "watchers": "Watcher(s)",
+    "archivedBy": "Archived By",
+    "archivedOn": "Archived On",
+    "archivalReason": "Archival Reason",
+    "archivalComments": "Archival Comments",
+    "ok": "OK",
+    "loading": "Loading case details...",
+    "noDetails": "No case details found.",
+    "cancel": "Cancel"
+  },
+  "addUser": {
+    "title": "Add User",
+    "username": "Username *",
+    "usernamePlaceholder": "Enter username",
+    "firstName": "First Name *",
+    "firstNamePlaceholder": "Enter first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter last name",
+    "role": "Role *",
+    "rolePlaceholder": "Select a role",
+    "email": "Email ID *",
+    "emailPlaceholder": "Enter email id",
+    "contact": "Contact Number",
+    "contactPlaceholder": "Enter contact number",
+    "password": "Password *",
+    "passwordPlaceholder": "Enter password",
+    "create": "Create",
+    "creating": "Creating...",
+    "cancel": "Cancel",
+    "errors": {
+      "username": "Username is required",
+      "firstName": "Firstname is required",
+      "role": "Role is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email format",
+      "password": "Password is required",
+      "invalidPassword": "Password must be at least 6 characters, include 1 capital letter and 1 special character.",
+      "authTokenMissing": "Authentication token missing.",
+      "userAddFailed": "Failed to add user.",
+      "userAddSuccess": "User added successfully",
+      "genericError": "Something went wrong"
+    }
+  },
+  "user": {
+    "dashboard_title": "User Dashboard",
+    "add_button": "+ Add New User",
+    "get_started_title": "Let's Get Started!",
+    "get_started_text": "Add users to get started",
+    "deleted_success": "User {{name}} deleted successfully",
+    "confirm_delete": "Are you sure you want to delete user {{name}}?",
+    "error_generic": "Something went wrong. Please try again",
+    "no_response": "No response from the server. Please check your connection",
+    "unknown_error": "An unknown error occurred. Please try again",
+    "columns": {
+      "id": "User ID",
+      "username": "Username",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "role": "Role",
+      "email": "Email",
+      "last_active": "Last Active",
+      "created_on": "Created On",
+      "created_by": "Created By",
+      "edited_on": "Edited On",
+      "edited_by": "Edited By",
+      "status": "Status"
+    }
+  },
+   "userDetails": {
+    "title": "User Details",
+    "loading": "Loading user details...",
+    "notFound": "No user details found.",
+    "username": "Username",
+    "userId": "User ID",
+    "email": "Email",
+    "lastActive": "Last Active",
+    "status": "Status",
+    "createdOn": "Created On",
+    "createdBy": "Created By",
+    "editedOn": "Edited On",
+    "editedBy": "Edited By"
+  },
+  "errors": {
+    "fetchUserDetails": "Failed to fetch user details"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel"
+  },
+   "errors": {
+    "invalidPassword": "Please enter a valid password.",
+    "resetPassword": "Error while resetting password"
+  },
+  "success": {
+    "passwordReset": "Password reset successfully"
+  },
+  "labels": {
+    "newPassword": "New Password *"
+  },
+  "placeholders": {
+    "enterNewPassword": "Enter your new password"
+  },
+  "validation": {
+    "passwordCriteria": "Password must be at least 6 characters, include 1 capital letter and 1 special character."
+  },
+  "buttons": {
+    "reset": "Reset",
+    "cancel": "Cancel"
+  },
+   "license": {
+    "title": "License Renewal",
+    "keyLabel": "License Key",
+    "placeholder": "Paste your license key here",
+    "applyButton": "Apply",
+    "success": "License renewed successfully",
+    "errors": {
+      "required": "License key is required",
+      "registrationFailed": "License registration failed"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+RowKey,Column,original,database,iscatalogue
+address,is_visible,f,t,
+extracted_text,is_visible,f,t,
+extracted_text,group_name,Entities,Common,
+filtername,is_visible,f,t,
+ifid,is_visible,f,t,
+objects,group_name,Entities,Common,t
+objects,display_name,Objects,Objects hide,t
+percent,is_visible,f,t,
+sentiment_confidence_score,is_visible,f,t,
+site_link_count,is_visible,t,f,f
+site_links,is_visible,t,f,f
+site_published_date,is_visible,t,f,f
+site_updated_date,is_visible,t,f,f
+socialmedia_activity_comment_count,is_visible,t,f,f
+socialmedia_activity_downvotes,is_visible,f,t,
+socialmedia_activity_is_sensitive,is_visible,f,t,
+socialmedia_activity_reply_count,is_visible,t,f,f
+socialmedia_activity_retweet_count,is_visible,t,f,f
+socialmedia_activity_share_count,is_visible,t,f,f
+socialmedia_activityid,is_visible,f,t,
+socialmedia_activityid,group_name,,OSINT,
+socialmedia_activityid,display_name,,Socialmedia Activity Id,
+socialmedia_commentid,is_visible,f,t,
+socialmedia_from_follower_count,is_visible,f,t,
+socialmedia_from_id,display_name,Profile ID,Profile ,t
+socialmedia_from_id_type,is_visible,f,t,
+socialmedia_media_url,is_visible,f,t,
+socialmedia_to_displayname,is_visible,f,t,
+targets,group_name,Entities,Common,
+unified_activity_content,group_name,,group 1,
+unified_activity_title,display_name,,Activity Title change,
+unified_case_id,display_name,Case ID,Case id,
+unified_date_only,is_visible,f,t,
+unified_date_only,display_name,,DateOnly,
+unified_filter_id,is_visible,f,t,
+unified_filter_id,display_name,,Filter Id       S,

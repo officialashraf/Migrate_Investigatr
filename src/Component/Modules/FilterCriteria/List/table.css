@@ -1,0 +1,241 @@
+.data-table-container {
+  padding-top: 0px;
+  margin: 0px 5px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+
+  background-color: white;
+}
+th {
+  background-color: gray !important;
+}
+td {
+  background-color: lightgray !important;
+  height: 20px;
+}
+.search-bar1 {
+  width: 20%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.form-control {
+  padding: 0 0 0 15px !important;
+  font-size: 12px;
+}
+
+.search-icon {
+  background-color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 0 0 0;
+  border: white;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.2rem;
+}
+.icon:hover {
+  background-color: gray;
+  /* color: white; */
+  cursor: pointer;
+}
+
+.header-icon {
+  display: flex;
+}
+
+.btn {
+  padding: none !important;
+}
+
+.data-table {
+  background-color: #e9e9e9;
+  color: #000;
+  table-layout: fixed;
+  border-collapse: collapse;
+  max-height: 80vh;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.data-table th {
+  vertical-align: middle;
+  padding: 0px 5px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.data-table td {
+  vertical-align: middle;
+  padding: 0px 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.data-table thead {
+  background-color: #d3d3d3;
+  font-weight: none !important;
+  position: sticky;
+  top: -2px;
+  z-index: 2;
+  height: 21px;
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 0rem !important;
+  --bs-dropdown-link-active-bg: black;
+  padding: 0px;
+}
+.dropdown-item:hover {
+  background-color: black;
+  border-color: white;
+  color: gray;
+}
+.custom-dropdown1 .dropdown-toggle::after {
+  display: none;
+}
+
+.custom-dropdown-toggle {
+  background: none;
+  border: none;
+  color: black;
+  /* Only black color for the dots */
+  padding: 0;
+  font-size: 1.5rem;
+  /* Adjust size as needed */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: black;
+  /* Only black color for the dots */
+  font-size: 1rem;
+  justify-content: flex-end;
+}
+
+.custom-dropdown-toggle::after {
+  display: none;
+  /* Remove default dropdown icon */
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus,
+.custom-dropdown-toggle:active {
+  background: none !important;
+  /* Remove background on hover, focus, and active states */
+  box-shadow: none !important;
+  /* Remove box-shadow if any */
+  outline: none !important;
+  /* Remove outline if any */
+}
+
+.custom-dropdown-menu {
+  right: 0;
+  left: auto;
+  /* Ensure the dropdown menu appears on the right */
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  color: white;
+  /* Menu item text color */
+}
+
+.custom-btn,
+.dropdown-toggle {
+  --bs-btn-border-color: none !important;
+  --bs-btn-hover-color: none !important;
+  --bs-btn-hover-bg: none !important;
+  --bs-btn-hover-border-color: none !important;
+  --bs-btn-focus-shadow-rgb: none !important;
+  --bs-btn-active-color: none !important;
+  --bs-btn-active-bg: none !important;
+  --bs-btn-active-border-color: none !important;
+  --bs-btn-active-shadow: none !important;
+  --bs-btn-disabled-color: none !important;
+  --bs-btn-disabled-bg: none !important;
+  --bs-btn-disabled-border-color: none !important;
+  --bs-btn-bg: white;
+  --bs-btn-color: black;
+  --bs-btn-padding-x: 0rem !important;
+}
+
+.custom-confirm-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+  background-color: #ccc;
+  color: #000;
+  width: 30%;
+  height: 10%;
+}
+
+.custom-confirm-button:hover {
+  background-color: black;
+  color: white;
+}
+.search-bar1 .form-control:focus {
+  border-color: transparent; /* Focus border color ko remove karne ke liye */
+  box-shadow: none; /* Focus box-shadow ko remove karne ke liye */
+  outline: none; /* Focus outline ko remove karne ke liye */
+}
+.badge-custom {
+  border-radius: 5px !important; /* Border radius ko 5px set karne ke liye */
+  width: 80%; /* Badge ki width ko container ke width ke barabar set karne ke liye */
+  display: flex; /* Badge ko flex container banane ke liye */
+  justify-content: center; /* Badge text ko center align karne ke liye */
+   --bs-badge-font-weight: 0 !important;
+  font-family: sans-serif !important;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ 
+.rounded-pill {
+  border-radius: 5px !important;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.add-btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 0px;
+  background-color: #ccc;
+  color: #000;
+}
+
+.add-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  font-weight: 500;
+  justify-content: center;
+  display: inline-block;
+  white-space: nowrap;
+  align-items: center;
+}

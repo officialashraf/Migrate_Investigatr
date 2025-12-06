@@ -1,0 +1,107 @@
+.cardsContainer {
+  flex: 70%;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.errorContainer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.errorMessage {
+  color: var(--color-colors-danger);
+}
+
+.userCard {
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--color-colors-secondary) !important;
+  border-radius: 15px !important;
+}
+
+.userCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.userAvatar {
+  margin-right: 8px !important;
+}
+.userHeader {
+  display: flex;
+  align-items: center;
+   word-break: break-word;
+   flex-wrap: wrap; 
+   margin-bottom: 10px;
+   gap: 10px;
+}
+.userDetails {
+  flex: 1;
+  text-align: center;
+}
+.userName {
+  margin: 0 !important;
+}
+.css-1lt5qva-MuiCardContent-root:last-child {
+  padding-bottom: 10px !important;
+}
+.userInfo {
+  color: var(--color-colors-neutralText) !important;
+   word-break: break-word;
+   flex-wrap: wrap; 
+   font-size: 14px !important;
+   font-weight: 400 !important;
+   
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.infoIconWrapper {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-colors-backgroundColor) !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.infoIcon {
+  color: var(--color-colors-primaryAccent) !important;
+  font-size: 20px !important;
+  word-break: break-word;
+   flex-wrap: wrap; 
+     width: 15px !important;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;            
+  width: 100%;  
+}
+
+.infoLabel {
+  font-size: 12px;
+  color: var(--color-colors-primaryAccent) !important;
+  font-weight: 500;
+
+}
+
+.infoValue {
+  font-size: 10px;
+  color: var(--color-colors-neutralText) !important;
+  word-break: break-word;
+  font-weight: 400;
+}

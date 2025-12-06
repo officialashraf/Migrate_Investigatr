@@ -1,0 +1,156 @@
+
+
+.synonymInputContainer {
+  /* margin-bottom: 15px; */
+}
+
+.synonymChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.synonymChip {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-colors-primaryAccent);
+  color: white;
+  padding: 0px 8px;
+  border-radius: 16px;
+}
+
+.synonymRemove {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.synonymRemove:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.subtypeField {
+  flex:1 1;
+  min-width: 200px;
+}
+.subtypeFields {
+  flex:1 1;
+}
+.subtypeField label {
+  display: block;
+ }
+
+.remove-subtype {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+
+.add-subtype-btn:hover {
+  background-color: var(--color-colors-success);
+}
+
+.subtype-select, .target-select {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .subtype-row {
+    flex-direction: column;
+  }
+  
+  .subtype-field {
+    width: 100%;
+  }
+  
+  .subtype-actions {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+}
+.subtype-section {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+   height: 150px;
+    scrollbar-color: var(--color-colors-primaryAccent) var(--color-colors-secondary);
+  scrollbar-width: thin;
+}
+
+.subtype-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #101d2b;
+  border-radius: 5px;
+  position: relative;
+}
+
+.subtype-field {
+  flex:1 1;
+  min-width: 200px;
+}
+.subtype-fields {
+  flex:1 1;
+}
+.subtype-field label {
+  display: block;
+ }
+
+.subtype-actions {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+
+
+.add-subtype-btn {
+  background-color: var(--color-colors-danger);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.css-1xc3v61-indicatorContainer{
+    padding: 0px !important;
+}
+
+.css-19bb58m{
+    padding: 0px;
+    margin: 0px;
+}
+@media (max-width: 768px) {
+  .subtype-row {
+    flex-direction: column;
+  }
+  
+  .subtype-field {
+    width: 100%;
+  }
+  
+  .subtype-actions {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+}

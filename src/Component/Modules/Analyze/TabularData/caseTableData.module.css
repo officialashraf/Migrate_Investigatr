@@ -1,0 +1,104 @@
+.fixedTh {
+  position: sticky;
+  top: -2px;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 40px; /* Fixed width */
+  max-width: 200px;
+  color: var(--color-colors-neutralText);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 24px;
+}
+
+.borderTh{
+  border-right: "1px solid #1659a0ff !important",
+}
+.groupTh {
+  position: sticky;
+  top: -2px;
+  background-color:'#101D2B !important';
+  text-align: center;
+  vertical-align: middle;
+  min-width: 40px; /* Fixed width */
+  max-width: 200px;
+  color: var(--color-colors-neutralText);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 24px;
+}
+.fixedTd {
+  min-width: 40px; /*Fixed width */
+  max-width: 200px; /* Match header width */
+  height: 20px; /* Fix row height */
+  padding: 5px;
+  text-align: left;
+  overflow: hidden;
+  
+}
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll if content exceeds table width */
+}
+
+:global(.pagination) {
+  --bs-pagination-focus-bg: none !important;
+  --bs-pagination-focus-color: none !important;
+  --bs-pagination-active-bg: var(--color-colors-primaryAccent) !important;
+  --bs-pagination-bg: var(--color-colors-backgroundColor) !important;
+  --bs-pagination-hover-color: white !important;
+  --bs-pagination-hover-bg: var(--color-colors-primaryAccent) !important;
+}
+
+:global(.page-link) {
+  background-color:var(--color-colors-secondary);
+  
+}
+:global(.pagination .page-item:hover .page-link) {
+  background-color: #0073CF !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: white !important;
+}
+
+:global(.page-link) {
+  color: rgb(254, 254, 254);
+  text-decoration: underline;
+  border: none;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+:global(.pagination .page-link:focus) {
+  box-shadow: none !important;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  :global(.paginationstabs) {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+}
+
+/* Disabled pagination item color */
+:global(.pagination .page-item.disabled),
+:global(.pagination .page-item.disabled .page-link) {
+  background-color:var(--color-colors-secondary);
+  color: var(--color-colors-neutralText) !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+/* .groupTh {
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+} */

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family:  "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #080e17;
+}
+
+#root{
+  background-color: #080e17;
+}
+code {
+  font-family:  "Roboto", sans-serif;
+}
+/* === Unified Toastify Styling === */
+.Toastify__toast {
+  background-color: #0A192F !important;
+  border: 1px solid #2196f3 !important;
+  color: white !important;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.Toastify__close-button {
+  color: white !important;
+  opacity: 0.8;
+}
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+.Toastify__progress-bar {
+  background: #2196f3;
+}

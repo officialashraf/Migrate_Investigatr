@@ -1,0 +1,250 @@
+{
+  "welcome": "Une plateforme OSINT sécurisée et unifiée pour l'Afrique",
+  "login": {
+    "title": "Connexion",
+    "username": "Nom d'utilisateur *",
+    "usernamePlaceholder": "Entrez votre nom d'utilisateur",
+    "password": "Mot de passe *",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "submit": "Connexion pour commencer votre enquête",
+    "LicensePlaceholder": "Collez votre clé de licence ici",
+    "apply": "Appliquer",
+    "LicenseValidation": "Veuillez saisir la clé de licence avant de continuer",
+    "LicenseError": "Licence enregistrée, mais la vérification a échoué. Réessayer.",
+    "LicenseSuccess": "Licence enregistrée avec succès",
+    "LicenseError1": "L'enregistrement de la licence a échoué",
+    "LoginError": "Une erreur inattendue s'est produite. Veuillez réessayer.",
+    "LoginError1": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "footer": "Fièrement développé par Proforce",
+  "loginErrors": {
+    "usernameRequired": "Le nom d'utilisateur est requis",
+    "passwordRequired": "Le mot de passe est requis"
+  },
+  "cases": {
+    "case_count": "Tous les cas",
+    "New": "Nouveaux cas",
+    "In Progress": "En cours",
+    "Closed": "Fermé",
+    "On Hold": "En attente",
+    "Archived": "Archivé",
+    "Deleted": "Supprimé"
+  },
+  "case_id": "ID du dossier",
+  "title": "Titre",
+  "description": "Description",
+  "created_on": "Créé le",
+  "created_by": "Créé par",
+  "assignee": "Cessionnaire",
+  "watchers": "Observateurs",
+  "edited_on": "Modifié le",
+  "edited_by": "Modifié par",
+  "status": "Statut",
+  "case_details": "Détails du dossier",
+  "add_new_case": "Ajouter un nouveau cas",
+  "lets_get_started": "Commençons !",
+  "add_cases_to_get_started": "Ajoutez des dossiers pour commencer",
+  "confirm_delete_case": "Êtes-vous sûr de vouloir supprimer le dossier {{title}} ?",
+  "yes": "Oui",
+  "no": "Non",
+  "case_deleted_success": "Dossier {{title}} supprimé avec succès",
+  "error": {
+    "fetching_data": "Erreur lors de la récupération des données",
+    "deleting_case": "Erreur lors de la suppression de la casse"
+  },
+  "case_form": {
+    "create_case": "Créer un dossier",
+    "title": "Titre *",
+    "description": "Description",
+    "title_placeholder": "Saisir le titre",
+    "description_placeholder": "Saisir la description",
+    "assignee": "Cessionnaire",
+    "watchers": "Observateurs",
+    "select_assignee": "Sélectionner le cessionnaire",
+    "select_watchers": "Sélectionner les observateurs",
+    "create": "Créer",
+    "creating": "Création...",
+    "cancel": "Annuler",
+    "title_required": "Titre requis",
+    "description_required": "Description requise",
+    "success": "Dossier créé avec succès",
+    "auth_error": "Erreur d'authentification : aucun jeton trouvé",
+    "unexpected_response": "Réponse inattendue du serveur",
+    "creation_error": "Erreur rencontrée lors de la création du dossier."
+  },
+  "edit_user": {
+    "heading": "Modifier l'utilisateur",
+    "username": "Nom d'utilisateur *",
+    "first_name": "Prénom *",
+    "last_name": "Nom de famille",
+    "role": "Rôle *",
+    "role_placeholder": "Sélectionner un rôle",
+    "email": "Identifiant e-mail *",
+    "contact_number": "Numéro de contact",
+    "username_required": "Nom d'utilisateur requis",
+    "email_required": "E-mail requis",
+    "invalid_email": "Format d'e-mail invalide",
+    "token_missing": "Jeton introuvable. Veuillez vous reconnecter",
+    "user_fetch_error": "Échec de la récupération des données utilisateur. Veuillez réessayer ultérieurement",
+    "no_changes": "Aucune modification détectée.",
+    "success": "Mise à jour de l'utilisateur réussie.",
+    "update_error": "Une erreur s'est produite lors de la mise à jour. Veuillez réessayer",
+    "edit": "Modifier",
+    "editing": "Modification en cours...",
+    "cancel": "Annuler"
+  },
+  "edit_case": {
+    "heading": "Modifier le dossier",
+    "title": "Titre *",
+    "description": "Description",
+    "assignee": "Cessionnaire",
+    "assignee_placeholder": "Sélectionner le cessionnaire",
+    "watchers": "Observateurs",
+    "watchers_placeholder": "Sélectionner les Observateurs",
+    "status": "Statut",
+    "status_placeholder": "Sélectionner le statut",
+    "comment": "Commentaire",
+    "title_required": "Titre requis",
+    "description_required": "Description requise",
+    "token_missing": "Erreur d'authentification : aucun jeton trouvé",
+    "user_fetch_error": "Échec de la récupération des utilisateurs",
+    "success": "Dossier mis à jour avec succès",
+    "update_error": "Échec de la mise à jour du dossier",
+    "edit": "Modifier",
+    "editing": "Modification en cours...",
+    "cancel": "Annuler",
+    "loading": " Chargement des détails du dossier… ",
+    "status_on_hold": " En attente ",
+    "status_closed": " Fermé"
+  },
+  "caseDetails": {
+    "title": "Détails du dossier",
+    "caseId": "ID du dossier",
+    "status": "Statut",
+    "description": "Description",
+    "createdOn": "Créé le",
+    "createdBy": "Créé par",
+    "editedOn": "Modifié le",
+    "editedBy": "Modifié par",
+    "assignee": "Cessionnaire",
+    "watchers": "Observateur(s)",
+    "archivedBy": "Archivé par",
+    "archivedOn": "Archivé le",
+    "archivalReason": "Raison de l'archivage",
+    "archivalComments": "Commentaires d'archivage",
+    "ok": "OK",
+    "loading": "Chargement des détails du dossier...",
+    "noDetails": "Aucun détail du dossier trouvé.",
+    "cancel": "Annuler"
+  },
+  "addUser": {
+    "title": "Ajouter un utilisateur",
+    "username": "Nom d'utilisateur *",
+    "usernamePlaceholder": "Saisir le nom d'utilisateur",
+    "firstName": "Prénom *",
+    "firstNamePlaceholder": "Saisir le prénom",
+    "lastName": "Nom de famille",
+    "lastNamePlaceholder": "Saisir le nom de famille",
+    "role": "Rôle *",
+    "rolePlaceholder": "Sélectionner un rôle",
+    "email": "Identifiant e-mail *",
+    "emailPlaceholder": "Saisir l'identifiant e-mail",
+    "contact": "Numéro de contact",
+    "contactPlaceholder": "Saisir le numéro de contact",
+    "password": "Mot de passe *",
+    "passwordPlaceholder": "Saisir le mot de passe",
+    "create": "Créer",
+    "creating": "Création...",
+    "cancel": "Annuler",
+    "errors": {
+      "username": "Nom d'utilisateur requis",
+      "firstName": "Prénom requis",
+      "role": "Le rôle est required",
+      "email": "L'adresse e-mail est obligatoire",
+      "invalidEmail": "Format d'e-mail invalide",
+      "password": "Mot de passe obligatoire",
+      "invalidPassword": "Le mot de passe doit comporter au moins 6 caractères, dont 1 majuscule et 1 caractère spécial.",
+      "authTokenMissing": "Jeton d'authentification manquant.",
+      "userAddFailed": "Échec de l'ajout de l'utilisateur.",
+      "userAddSuccess": "Utilisateur ajouté avec succès",
+      "genericError": "Une erreur s'est produite"
+    }
+  },
+  "user": {
+    "dashboard_title": "Tableau de bord utilisateur",
+    "add_button": "+ Ajouter un nouvel utilisateur",
+    "get_started_title": "Commençons !",
+    "get_started_text": "Ajoutez des utilisateurs pour commencer",
+    "deleted_success": "L'utilisateur {{name}} a été supprimé avec succès",
+    "confirm_delete": "Voulez-vous vraiment supprimer l'utilisateur {{name}} ?",
+    "error_generic": "Une erreur s'est produite. Veuillez réessayer",
+    "no_response": "Aucune réponse du serveur. Veuillez vérifier votre connexion",
+    "unknown_error": "Une erreur inconnue s'est produite. Veuillez réessayer",
+    "columns": {
+      "id": "ID utilisateur",
+      "username": "Nom d'utilisateur",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "role": "Rôle",
+      "email": "E-mail",
+      "last_active": "Dernière activité",
+      "created_on": "Créé le",
+      "created_by": "Créé par",
+      "edited_on": "Modifié le",
+      "edited_by": "Modifié par",
+      "status": "Statut"
+    }
+  },
+  "userDetails": {
+    "title": "Détails de l'utilisateur",
+    "loading": "Chargement des détails de l'utilisateur...",
+    "notFound": "Aucun détail trouvé.",
+    "username": "Nom d'utilisateur",
+    "userId": "ID utilisateur",
+    "email": "E-mail",
+    "lastActive": "Dernière activité",
+    "status": "Statut",
+    "createdOn": "Créé le",
+    "createdBy": "Créé par",
+    "editedOn": "Modifié le",
+    "editedBy": "Modifié par"
+  },
+  "errors": {
+    "fetchUserDetails": "Échec de la récupération des détails de l'utilisateur"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler"
+  },
+  "errors": {
+    "invalidPassword": "Veuillez saisir un mot de passe valide.",
+    "resetPassword": "Erreur lors de la réinitialisation du mot de passe"
+  },
+  "success": {
+    "passwordReset": "Mot de passe réinitialisé avec succès"
+  },
+  "labels": {
+    "newPassword": "Nouveau mot de passe *"
+  },
+  "placeholders": {
+    "enterNewPassword": "Saisissez votre nouveau mot de passe"
+  },
+  "validation": {
+    "passwordCriteria": "Le mot de passe doit comporter au moins 6 caractères, dont 1 majuscule et 1 caractère spécial."
+  },
+  "buttons": {
+    "reset": "Réinitialiser",
+    "cancel": "Annuler"
+  },
+  "license": {
+    "title": "Renouvellement de licence",
+    "keyLabel": "Clé de licence",
+    "placeholder": "Collez votre clé de licence ici",
+    "applyButton": "Appliquer",
+    "success": "Licence renouvelée avec succès",
+    "errors": {
+      "required": "Clé de licence requise",
+      "registrationFailed": "Échec de l'enregistrement de la licence"
+    }
+  }
+}

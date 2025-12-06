@@ -1,0 +1,27 @@
+.css-1bpewfd-MuiGrid-root {
+  margin-top: 0 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  padding: 5px !important;
+}
+.css-o1iywg-MuiGrid-root {
+  padding-top: 0px !important;
+}
+.css-apmp6g-MuiPaper-root-MuiCard-root{
+    margin-bottom: 0px !important;
+}
+.css-12oizz8-MuiPaper-root-MuiCard-root {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.grapghCards{
+   background-color: var(--color-colors-backgroundColor);
+}
+.responsiveContainer {
+  width: 100%;
+}
+
+@media (min-width: 400px) and (max-width: 1025px) {
+  .responsiveGrid {
+    width: 100%;
+  }
+}

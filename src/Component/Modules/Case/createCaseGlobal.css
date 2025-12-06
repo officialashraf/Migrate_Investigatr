@@ -1,0 +1,147 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+.popup-container {
+  width: 50%;
+  /* max-height: 75vh; */
+  height:auto; 
+  padding: 10px;
+  position: relative; 
+}
+@media screen and (max-width: 768px) {
+  .popup-container { 
+    width: 70%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .popup-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 912px) {
+  .popup-container {
+    width: 60%;
+  }
+}
+
+.close-icon {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.close-icon:hover {
+  color: #000;
+}
+
+.popup-content {
+  background-color: #0A192F;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.popup-content h5 {
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  color: #d2d2d2;
+  font-size: 12px;
+}
+
+.com {
+  width: 100%;
+  border: 1px solid #0073cf;
+  border-radius: 15px;
+  background-color: #080E17;
+  color: #d2d2d2;
+  font-size: 12px;
+  height: 38px;
+  padding-left: 4px;
+}
+
+.com:focus {
+  border-color: transparent; 
+  box-shadow: none; 
+  outline: none;
+}
+
+textarea {
+  height: 22px;
+  resize: vertical;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 12px;
+}
+
+.input-with-icon input {
+  padding-left: 30px; 
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn,
+.create-btn {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #000;
+  transition: 0.3s;
+}
+
+.create-btn {
+  background-color: #ccc;
+  color: #000;
+  transition: 0.3s;
+}
+.create-btn:disabled {
+  background-color: #fffdfd; 
+  color: #666;
+  cursor: not-allowed;
+  border: none;
+  opacity: 0.7;
+}
+
+.cancel-btn:hover,
+.create-btn:hover {
+  background-color: black;
+  color: white;
+}

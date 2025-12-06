@@ -1,0 +1,186 @@
+.profileContainer {
+  flex: 20%;
+  padding: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: var(--color-colors-neutralText);
+   height: 459px;
+   width: 307px;
+}
+
+.profileCard {
+  height: 459px;
+  border-radius: 15px;
+  background-color: var( --color-colors-secondary);
+  color: var(--color-colors-neutralText);
+  width: 307px;
+}
+
+@media (max-width: 1440px) {
+  .profileCard {
+    width: 280px;
+  }
+  .profileContainer {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profileCard {
+    width: 200px;
+  }
+  .profileContainer {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileCard {
+    margin: 0 auto;
+  }
+}
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileAvatarSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileAvatar {
+  width: 275px;
+  height: 138.8px;
+  background-color: #6f7172;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.profileAvatar img {
+  width: 275px;
+  height: 138.8px;
+  object-fit: contain;
+  background-color: #6f7172;
+  border-radius: 15px;
+}
+
+.profileId {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.activeBadge {
+  background-color:var( --color-colors-success);
+  color: var(--color-colors-neutralText);
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.threatScoreSection {
+  margin-top: 10px;
+}
+
+.threatLabel {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.threatScore {
+  background-color: var(--color-colors-warning);
+  color: #333;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.loadingContainer {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2b3a;
+  color: var(--color-colors-neutralText);
+}
+:global(.carousel-control-prev-icon),
+:global(.carousel-control-next-icon) {
+  display: none !important;
+}
+
+:global(.carousel-indicators) [data-bs-target] {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+}
+
+:global(.carousel-indicators) .active {
+  background-color: var(--color-colors-neutralText);
+}
+ .profileDetails {
+  padding: 15px;
+  height: 100%;
+}
+
+.profileNameAbovePhone{
+  font-size: 14px;
+  color: var(--color-colors-neutralText);
+  margin-top: 6px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;  
+}
+
+.detailText {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailLabel {
+   font-size: 12px;
+  color: var(--color-colors-primaryAccent);
+  font-weight: 500;
+}
+
+.detailValue {
+   font-size: 10px;
+  color: var(--color-colors-neutralText);
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.emailList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.emailList li {
+  color: var(--color-colors-neutralText);
+  font-size: 10px;
+}
+
+.detailIconWrapper {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-colors-backgroundColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailIcon {
+  color: var(--color-colors-primaryAccent);
+  font-size: 20px;
+}
+

@@ -1,0 +1,66 @@
+.card {
+  background-color: var(--color-colors-secondary);
+  border-radius: var(--shape-borderRadius);
+  padding: 18px;
+  width: 100%;
+  max-width: 360px;
+  height: 300px;
+  color: var(--color-colors-neutralText);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: var(--font-fontFamily);
+}
+
+/* 👇 Naya scroll area */
+.scrollArea {
+  flex: 1;                  /* jitni bachi height hai le lega */
+  overflow-y: auto;         /* sirf rows pe scroll */
+  padding-right: 4px;       /* scrollbar ke liye thoda space */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-colors-primaryAccent);
+  color: var(--color-colors-backgroundColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: var(--font-body1-fontSize);
+  margin: 0px !important;
+}
+
+.count {
+  font-size: var(--font-body2-fontSize);
+  margin: 0px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-colors-blackShade); */
+  font-size: var(--font-body2-fontSize);
+  background-color: var(--color-colors-secondary);
+  position: sticky;  /* 👈 Footer fix rahega niche */
+  bottom: 0;
+}

@@ -1,0 +1,10 @@
+:global(.leaflet-container) {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* :global(.leaflet-map-pane canvas){
+ height: 100vh !important;
+ width: 100% !important;
+
+} */

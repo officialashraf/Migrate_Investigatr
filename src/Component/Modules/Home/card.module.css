@@ -1,0 +1,133 @@
+.cardListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  justify-content: center;
+  padding: 0px !important;
+  margin-bottom: 20px;
+}
+
+.customCard {
+  background-color: var(--color-colors-secondary);
+  color: var(--color-colors-neutralText);
+  border-radius: var(--shape-borderRadius);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.customCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0;
+}
+
+.customTopRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customIconCircle {
+  background-color: var(--color-colors-primaryAccent);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-colors-backgroundColor);
+  font-size: var(--font-caption-fontSize);
+}
+
+.customCardLabel {
+  font-size: var(--font-body2-fontSize);
+  color: var(--color-colors-primaryAccent);
+  font-weight: var(--font-h5-fontWeight);
+}
+
+.customBottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customCardNumber {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-colors-neutralText);
+}
+
+.customArrowCircle {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--color-colors-primaryAccent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--color-colors-primaryAccent);
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .customCard {
+    width: calc(14.28% - 20px);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .customCard {
+    width: calc(14.28% - 20px);
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1024px) {
+  .customCard {
+    width: calc(13.28% - 12px);
+  }
+}
+
+@media (min-width: 540px) and (max-width: 920px) {
+  .customCard {
+    width: calc(20% - 10px);
+  }
+}
+
+@media (max-width: 540px) {
+  .cardListContainer {
+    justify-content: center;
+  }
+  .customCard {
+    width: calc(50% - 10px);
+    height: auto;
+  }
+  .customCardNumber {
+    font-size: 20px;
+  }
+  .customCardLabel {
+    font-size: 14px;
+  }
+  .customIconCircle {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .customArrowCircle {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+:global(.css-1lt5qva-MuiCardContent-root) {
+  padding: 10px !important;
+}
+
+:global(.css-1lt5qva-MuiCardContent-root:last-child) {
+  padding: 10px !important;
+}
+ 
