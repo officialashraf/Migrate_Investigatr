@@ -11,7 +11,7 @@ const AboutUs = ({ togglePopup }) => {
             <div className={styles.container}>
                 <div className={styles.grid}>
                     <DetailBox label="Product Name" value={`Investigatr`} />
-                    <DetailBox label="Version" value={`1.1.2`} />
+                    <DetailBox label="Version" value={`1.1.3`} />
                     <DetailBox label="Updated By" value={`Curated Codes Pvt. Ltd.`} />
                     <DetailBox label="Maintained By" value={`Curated Codes Pvt. Ltd.`} />
                 </div>
